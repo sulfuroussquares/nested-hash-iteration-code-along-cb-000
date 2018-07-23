@@ -17,9 +17,8 @@ require 'pry'
   def remove_strawberry(contacts)
   contacts.each do |person, data|
     #at this level, "person" is Jon Snow or Freddy and "data" is a hash of key/value pairs
-    
+
     if (person == "Freddy Mercury")
-      puts "FOUND HIM!"
       i = 0
       data.each do |attribute, value|
        if attribute == :favorite_ice_cream_flavors
